@@ -77,31 +77,18 @@
 
 
 
-<meta name="description" content="1、Standard材质整理   [修正]">
+<meta name="description" content="1、平滑组法线算法修正   [修改] 2、顶点、法线、UV存档格式算法实现   [新增]">
 <meta name="keywords" content="core">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017-11-15">
-<meta property="og:url" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/index.html">
+<meta property="og:title" content="2017-11-27">
+<meta property="og:url" content="https://aabbbcc.github.io/2017/11/27/2017-11-27/index.html">
 <meta property="og:site_name" content="Work Pace">
-<meta property="og:description" content="1、Standard材质整理   [修正]">
+<meta property="og:description" content="1、平滑组法线算法修正   [修改] 2、顶点、法线、UV存档格式算法实现   [新增]">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/A.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/B.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/C.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/D.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/E.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/F.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/G.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/H.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/I.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/J.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/K.png">
-<meta property="og:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/L.png">
-<meta property="og:updated_time" content="2017-11-15T13:48:02.310Z">
+<meta property="og:updated_time" content="2017-11-27T14:21:13.106Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-11-15">
-<meta name="twitter:description" content="1、Standard材质整理   [修正]">
-<meta name="twitter:image" content="https://aabbbcc.github.io/2017/11/15/2017-11-15/A.png">
+<meta name="twitter:title" content="2017-11-27">
+<meta name="twitter:description" content="1、平滑组法线算法修正   [修改] 2、顶点、法线、UV存档格式算法实现   [新增]">
 
 
 
@@ -131,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://aabbbcc.github.io/2017/11/15/2017-11-15/"/>
+  <link rel="canonical" href="https://aabbbcc.github.io/2017/11/27/2017-11-27/"/>
 
 
 
 
 
-  <title>2017-11-15 | Work Pace</title>
+  <title>2017-11-27 | Work Pace</title>
   
 
 
@@ -254,7 +241,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://aabbbcc.github.io/2017/11/15/2017-11-15/">
+    <link itemprop="mainEntityOfPage" href="https://aabbbcc.github.io/2017/11/27/2017-11-27/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="---">
@@ -271,7 +258,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2017-11-15</h1>
+          <h1 class="post-title" itemprop="name headline">2017-11-27</h1>
         
 
         <div class="post-meta">
@@ -283,8 +270,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-15T21:42:58+08:00">
-                2017-11-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-27T22:21:13+08:00">
+                2017-11-27
               </time>
             
 
@@ -321,19 +308,8 @@
       
 
       
-        <p>1、Standard材质整理   [修正]</p>
-<p><img src="/2017/11/15/2017-11-15/A.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/B.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/C.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/D.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/E.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/F.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/G.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/H.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/I.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/J.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/K.png" alt=""></p>
-<p><img src="/2017/11/15/2017-11-15/L.png" alt=""></p>
+        <p>1、平滑组法线算法修正   [修改]</p>
+<p>2、顶点、法线、UV存档格式算法实现   [新增]</p>
 
       
     </div>
@@ -364,8 +340,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/14/2017-11-14/" rel="next" title="2017-11-14">
-                <i class="fa fa-chevron-left"></i> 2017-11-14
+              <a href="/2017/11/26/2017-11-26/" rel="next" title="2017-11-26">
+                <i class="fa fa-chevron-left"></i> 2017-11-26
               </a>
             
           </div>
@@ -373,10 +349,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/16/2017-11-16/" rel="prev" title="2017-11-16">
-                2017-11-16 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
